@@ -54,8 +54,6 @@
     m stands for message
 + message is just helpful description that tells what changes i've made in this commit.
 
-![git-commit](git-commit.png)
-
 + this command will create a new version or snapshot of the current repo and also keeping track of older version of code.
 
 ### git status
