@@ -166,7 +166,7 @@
 
 - indentation is just for style not necessary. but it helps us to read the html code more easily.
 
-## headings
+### headings
 
 - ```<h1>``` is used to specify the heading text.
 
@@ -183,13 +183,13 @@
 
 ```
 
-## viewing page source in browsers
+### viewing page source in browsers
 
 - right click the browser and click "view page source"
 
 - that way you can see the source of the webpage.
 
-## lists
+### lists
 
 ```html
   <ul>
@@ -212,7 +212,7 @@ Note:
 
 - when you want someone to read the list in linear way, then use numbers else use bullets (don't want the user to read in linear way.)
 
-## images
+### images
 
     ```html
         <img src="cat.jpg">
@@ -236,7 +236,7 @@ Note:
 
 - this image will take 75 percent width of the total size.
 
-## Tables
+### Tables
 
 ```html
 
@@ -270,7 +270,7 @@ Note:
 
 - when we create table using html, there is no borders, colors or styles. we can give this by using css.
 
-## form controls (HTML4)
+### form controls (HTML4)
 
 - form control is used to get information from the user.
 
@@ -286,13 +286,13 @@ survey, poll etc.
 
 ```
 
-## Document Object Model
+### Document Object Model
 
 - think html like a tree structure.
 
 - why we need to understand like this, is because once we start learning javascript we start manipulate the tree structure, by add things to trees, remove things from trees and so on.
 
-## paragraph tag
+### paragraph tag
 
 - ```<p>``` tag is used to create a paragraph of text in html.
 
@@ -312,22 +312,41 @@ survey, poll etc.
 
 - we can apply css styles by using style attribute. it is called inline style.
 
-- every css property is in key-value pairs i.e ```color:blue```, ```text-align:center``` and must be ended with semi-colon ```;```
+- every css property is in key-value pairs i.e ```color:blue```, ```text-align:center``` and must be ended with semi-colon ```;```.
 
-## colors
+### colors
+
+ - 140 different predefined named colors available. eg) red, blue, green, magenta and so on.
+
+ - we can also specify colors using hex value. eg) #0c8e05, #0d2dff
+
+ - in hex values, first two value represents amount of red and next two represents amount of green and last two represents amount of blue in that color.
 
 
-
-## text-align
+### text-align
 
 - text-align property is used to align the text and the values will be ```left```, ```center```, ```right```.
 
-## style Tag
+---
+    Disadvantages:
+
+    1. If you add lot of styles using style attribute, soon they page will be cluttered and messy.
+    2. If you want apply same styles for two <h1> tag, then you need to add style attribute and its styles in two tags. Repeation of styles used here.
+
+---
 
 
+### style Tag
 
+- we can apply styles that matches the corresponding tag. eg) here the color and text-align property applies to all h1 tag.
 
+```css
 
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+    </style>
 
-
-
+```
