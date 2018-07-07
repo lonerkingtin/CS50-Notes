@@ -316,11 +316,11 @@ survey, poll etc.
 
 ### colors
 
- - 140 different predefined named colors available. eg) red, blue, green, magenta and so on.
+- 140 different predefined named colors available. eg) red, blue, green, magenta and so on.
 
- - we can also specify colors using hex value. eg) #0c8e05, #0d2dff
+- we can also specify colors using hex value. eg) #0c8e05, #0d2dff
 
- - in hex values, first two value represents amount of red and next two represents amount of green and last two represents amount of blue in that color.
+- in hex values, first two value represents amount of red and next two represents amount of green and last two represents amount of blue in that color.
 
 
 ### text-align
@@ -331,8 +331,12 @@ survey, poll etc.
     Disadvantages:
 
     1. If you add lot of styles using style attribute, soon they page will be cluttered and messy.
-    2. If you want apply same styles for two <h1> tag, then you need to add style attribute and its styles in two tags. Repeation of styles used here.
 
+    2. If you want apply same styles for two <h1> tag, then you need to add style attribute and its styles in two tags. Repeation of styles used here.
+        <h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
+        <h1 style="color:blue;text-align:center;">Another Heading!</h1>
+
+    3. If you want to change the color of all <h1> tag, you need to search through every <h1> tag and edit this color property. it's not a very good way.
 ---
 
 
@@ -340,7 +344,7 @@ survey, poll etc.
 
 - we can apply styles that matches the corresponding tag. eg) here the color and text-align property applies to all h1 tag.
 
-```css
+```html
 
     <style>
         h1 {
@@ -350,3 +354,134 @@ survey, poll etc.
     </style>
 
 ```
+
+---
+    Disadvantages:
+
+    you can add style tag on each page, but again repeating of code will be there.
+
+---
+
+
+### link tag
+
+- if you have multiple html files and you have to share the styles across all html files can be done via link tag.
+
+```html
+
+    <link rel="stylesheet" href="styles.css">
+
+```
+
+- link tag tells that we are going link some files to this page.
+
+- rel means what kind of file it is.
+
+- href refers to the name of the css file.
+
+```css
+
+    h1{
+        color: blue;
+        text-align: center;
+    }
+
+```
+
+### div tag
+
+- div means a division or section of code.
+
+- div has no formal meaning.
+
+```css
+
+    div{
+        background-color: teal;
+        width: 500px;
+        height: 400px;
+    }
+
+```
+
+```html
+
+    <div>
+        Hello, World!
+    </div>
+
+```
+
+### margin property
+
+- margin refers space outside of the border.
+
+```css
+
+div {
+    margin: 30px;
+}
+
+```
+
+### padding property
+
+- padding refers space between border and the content inside the tag.
+
+```css
+
+div {
+    padding: 20px;
+}
+
+```
+
+### font and font-family
+
+- font-family refers to what type of font that content on the div is going to be displayed.
+
+- we have given two values - Arial and sans-serif.
+
+- If the user doesn't installed Arial font, then it uses any sans-serif font that user has.
+
+- font-size refers the size of the font to be displayed.
+
+- font-weight refers to style of the font whether to be in italic, bold or other.
+
+```css
+
+    div{
+        font-family: Arial, sans-serif;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+```
+```html
+
+    <div>
+        Hello, world!
+    </div
+
+```
+
+### border property
+
+
+```html
+
+    <div>
+        Hello, World
+    </div>
+
+```
+
+
+```css
+
+    div {
+        border: 3px solid blue;
+    }
+
+```
+
