@@ -1,4 +1,4 @@
-# CS50's Web Programming with Python and JavaScript
+# Lecture0 - CS50's Web Programming with Python and JavaScript
 
 ## version control
 
@@ -467,6 +467,8 @@ div {
 
 ### border property
 
+- border property is used to set the border of the tag.
+
 
 ```html
 
@@ -485,3 +487,131 @@ div {
 
 ```
 
+### styling our html table
+
+- we can apply same styles to multiple tags in the same line by separating each tag with comma.
+
+- it helps to aviod repeating code.
+
+```css
+
+    th {
+        border: 1px solid black;
+    }
+
+    td {
+        border: 1px solid black;
+    }
+
+```
+
+```css
+
+   th, td {
+        border: 1px solid black;
+    }
+
+```
+- border-collapse css property will remove double border in a table.
+
+```css
+
+    table {
+        border-collapse: collapse;
+    }
+
+```
+
+- text-align property will align the text.
+
+```css
+
+    th, td {
+        text-align: center;
+    }
+
+```
+
+### divs and spans
+
+- divs and spans are used to uniquely identifying a html element that we can apply styles to it.
+
+- divs and spans create a section in our html page. using div's and span's, we can label different parts of our page.
+
+- we can use id attribute on any html tag. id attribute values must be unique in a html page.
+
+- we can use class attribute on any html tag. class attribute values can be repeatative.
+
+```html
+
+    <div id="top">
+        This is the <span class="name">top</span> of my web page.
+    </div>
+    <div id="middle">
+        This is the <span class="name">top</span> of my web page.
+    </div>
+    <div id="bottom">
+        This is the <span class="name">top</span> of my web page.
+    </div>
+
+```
+
+- we can apply styles to the tags using id values and class values.
+
+```css
+
+    #top {
+        font-size: 36px;
+    }
+
+    #middle {
+        font-size: 24px;
+    }
+
+    #bottom {
+        font-size: 12px;
+    }
+    .name{
+        font-weight: bold;
+    }
+
+```
+
+- In css, we can target id attribute using # (hash).
+
+- ```#``` means look for an id in the html and followed by the name that matches the id attribute value and apply its styles.
+
+- In css, we can target class attribute using . (dot).
+
+- ```.``` means look for an class in the html and followed by the name that matches the class attribute value and apply its styles.
+
+- if you want to apply set of styles multiple times, then use a class or use a id to target the element.
+
+
+### conflicts between styles
+
+- If conflicts arises between styles, the more specific style will apply to that element.
+
+```html
+
+    <div id="top">
+        This is the <span class="name">top</span> of my web page.
+    </div>
+
+```
+
+```css
+
+    #top{
+        color: red;
+    }
+
+    .class{
+        color: blue;
+    }
+
+```
+
+---
+    end of lecture0
+---
