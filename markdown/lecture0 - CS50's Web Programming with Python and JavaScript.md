@@ -3,11 +3,12 @@
 ## version control
 
 - when building a project, how do we track of different versions of code.
+
 - collaborate with other people.
 
 - if we make a change to the code and it didn't work, so we go back to previous version of code.
 
-## git
+### git
 
 1.keeping track of different versions to the code
 
@@ -20,7 +21,7 @@
 
 4.revert back to older version of code.
 
-## github
+### github
 
 - storing git repo in the internet
 
@@ -39,6 +40,7 @@
 - now you have the copy in your own computer.
 
 ---
+
     After you write certain amount of code you want to save or make certain changes next thing to do (every code or anything you do will via files & folder)
 
 ---
@@ -53,16 +55,18 @@
 
 - commit is used to take a snapshot of the repos or just save this version.
 
-    ```git
+  ```git
     git commit -m "message"
-    ```
+  ```
 
-    ```git
+  ```git
     git commit -am "message"
-    ```
+  ```
+
     adds to staging area and commits with single command.
 
     m stands for message
+
 - message is just helpful description that tells what changes i've made in this commit.
 
 - this command will create a new version or snapshot of the current repo and also keeping track of older version of code.
@@ -71,9 +75,9 @@
 
 - this command tells the current status of the repo.
 
-    ```git
+  ```git
     git status
-    ```
+  ```
 
 ### git push
 
@@ -87,9 +91,9 @@
 
 - someone made changes and pushed to repo and now you want to download the latest changes happened on that repo.
 
-   ```git
+  ```git
    git pull
-   ```
+  ```
 
 ### merge conflicts
 
@@ -110,7 +114,6 @@
   ```git
     git reset --hard <commit hash>
   ```
-
   - revert back to version based on commit hash.
 
   ```git
@@ -123,9 +126,9 @@
 
 - it logs all the reference git track of.
 
-    ```git
+  ```git
         git reflog
-    ```
+  ```
 
 ## HTML
 
@@ -144,7 +147,6 @@
             Hello, World!
         </body>
     </html>
-
 ```
 
 - line 1 represents it is html5 version. the browser identifies its in HTML5 version.
@@ -180,7 +182,6 @@
   <h4>this is heading level 4</h4>
   <h5>this is heading level 5</h5>
   <h6>this is heading level 6</h6>
-
 ```
 
 ### viewing page source in browsers
@@ -257,7 +258,6 @@ Note:
             <td>1797-1801</td>
         </tr>
     </table>
-
 ```
 
 - ```<table>``` tag is used to create a table.
@@ -275,7 +275,7 @@ Note:
 - form control is used to get information from the user.
 
 - Like sign up for our website or login into our websites,
-survey, poll etc.
+  survey, poll etc.
 
 ```html
 
@@ -283,7 +283,6 @@ survey, poll etc.
         <input type="text" placeholder="Full Name" name="name">
         <button>Submit!</button>
     </form>
-
 ```
 
 ### Document Object Model
@@ -296,8 +295,6 @@ survey, poll etc.
 
 - ```<p>``` tag is used to create a paragraph of text in html.
 
-
-
 ## Cascading StyleSheet
 
 - css means cascading stylesheet.
@@ -307,7 +304,6 @@ survey, poll etc.
 ```html
 
     <h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
-
 ```
 
 - we can apply css styles by using style attribute. it is called inline style.
@@ -322,23 +318,23 @@ survey, poll etc.
 
 - in hex values, first two value represents amount of red and next two represents amount of green and last two represents amount of blue in that color.
 
-
 ### text-align
 
 - text-align property is used to align the text and the values will be ```left```, ```center```, ```right```.
 
 ---
+
     Disadvantages:
-
+    
     1. If you add lot of styles using style attribute, soon they page will be cluttered and messy.
-
+    
     2. If you want apply same styles for two <h1> tag, then you need to add style attribute and its styles in two tags. Repeation of styles used here.
         <h1 style="color:blue;text-align:center;">Welcome to My Web Page!</h1>
         <h1 style="color:blue;text-align:center;">Another Heading!</h1>
-
+    
     3. If you want to change the color of all <h1> tag, you need to search through every <h1> tag and edit this color property. it's not a very good way.
----
 
+---
 
 ### style Tag
 
@@ -352,16 +348,15 @@ survey, poll etc.
             text-align: center;
         }
     </style>
-
 ```
 
 ---
-    Disadvantages:
 
+    Disadvantages:
+    
     you can add style tag on each page, but again repeating of code will be there.
 
 ---
-
 
 ### link tag
 
@@ -370,7 +365,6 @@ survey, poll etc.
 ```html
 
     <link rel="stylesheet" href="styles.css">
-
 ```
 
 - link tag tells that we are going link some files to this page.
@@ -385,7 +379,6 @@ survey, poll etc.
         color: blue;
         text-align: center;
     }
-
 ```
 
 ### div tag
@@ -401,7 +394,6 @@ survey, poll etc.
         width: 500px;
         height: 400px;
     }
-
 ```
 
 ```html
@@ -409,7 +401,6 @@ survey, poll etc.
     <div>
         Hello, World!
     </div>
-
 ```
 
 ### margin property
@@ -421,7 +412,6 @@ survey, poll etc.
 div {
     margin: 30px;
 }
-
 ```
 
 ### padding property
@@ -433,7 +423,6 @@ div {
 div {
     padding: 20px;
 }
-
 ```
 
 ### font and font-family
@@ -455,36 +444,31 @@ div {
         font-size: 28px;
         font-weight: bold;
     }
-
 ```
+
 ```html
 
     <div>
         Hello, world!
     </div
-
 ```
 
 ### border property
 
 - border property is used to set the border of the tag.
 
-
 ```html
 
     <div>
         Hello, World
     </div>
-
 ```
-
 
 ```css
 
     div {
         border: 3px solid blue;
     }
-
 ```
 
 ### styling our html table
@@ -502,7 +486,6 @@ div {
     td {
         border: 1px solid black;
     }
-
 ```
 
 ```css
@@ -510,8 +493,8 @@ div {
    th, td {
         border: 1px solid black;
     }
-
 ```
+
 - border-collapse css property will remove double border in a table.
 
 ```css
@@ -519,7 +502,6 @@ div {
     table {
         border-collapse: collapse;
     }
-
 ```
 
 - text-align property will align the text.
@@ -529,7 +511,6 @@ div {
     th, td {
         text-align: center;
     }
-
 ```
 
 ### divs and spans
@@ -553,7 +534,6 @@ div {
     <div id="bottom">
         This is the <span class="name">top</span> of my web page.
     </div>
-
 ```
 
 - we can apply styles to the tags using id values and class values.
@@ -574,7 +554,6 @@ div {
     .name{
         font-weight: bold;
     }
-
 ```
 
 - In css, we can target id attribute using # (hash).
@@ -587,7 +566,6 @@ div {
 
 - if you want to apply set of styles multiple times, then use a class or use a id to target the element.
 
-
 ### conflicts between styles
 
 - If conflicts arises between styles, the more specific style will apply to that element.
@@ -597,7 +575,6 @@ div {
     <div id="top">
         This is the <span class="name">top</span> of my web page.
     </div>
-
 ```
 
 ```css
@@ -609,9 +586,8 @@ div {
     .class{
         color: blue;
     }
-
 ```
 
 ---
+
     end of lecture0
----
